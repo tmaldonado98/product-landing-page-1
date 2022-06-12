@@ -1,0 +1,133 @@
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  color: black;
+}
+
+a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-decoration: none;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+#container-nav {
+  position: fixed;
+  width: 100%;
+  height: 7rem;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding: 0.75rem;
+  background-color: azure;
+}
+
+#container-logo {
+  margin-right: 15rem;
+  margin-left: 5rem;
+}
+
+#logo {
+  display: block;
+  width: 7.5rem;
+}
+
+.nav-item {
+  height: auto;
+}
+
+.h-link {
+  padding: 1rem;
+}
+
+.h-p {
+  text-decoration: none;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+#latest-prod-cover {
+  height: 100%;
+  width: 100%;
+  background-image: url(./icons-images/model-xsw.jpg);
+  background-size: cover;
+}
+
+#prod-title {
+  position: relative;
+  top: 20rem;
+  left: 5rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+
+#prod-title strong {
+  color: white;
+  font-size: 6rem;
+}
+
+#prod-title h1 {
+  color: white;
+  font-size: 5rem;
+}
+
+#prod-title h2 {
+  color: white;
+  font-size: 4rem;
+}
+
+#latest-prod-btn {
+  margin-top: 2rem;
+  width: 25rem;
+  border: 2px solid rgba(255, 255, 255, 0.163);
+}
+
+#latest-prod-btn:hover {
+  background-color: rgb(255, 255, 255);
+  transition-duration: 100ms;
+  border: none;
+  box-shadow: 5px 5px 50px 10px rgb(185, 185, 185);
+}
+#latest-prod-btn:hover p {
+  color: rgb(52, 52, 55);
+}
+
+#padding-div {
+  padding: 2rem;
+}
+
+#latest-prod-btn p {
+  color: white;
+  font-size: 3rem;
+}
+
+footer {
+  display: flex;
+  background-color: #1F2937;
+  color: white;
+  height: 100px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+footer p {
+  margin: auto;
+}/*# sourceMappingURL=main.css.map */
