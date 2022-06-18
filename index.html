@@ -10,6 +10,7 @@
     </head>
 
 <body>
+    <!--<script defer src="./main.js"></script>-->
     <header>
         <nav id="container-nav">
                 <div id="container-logo">
@@ -57,9 +58,25 @@
                         </div>
                     </a>
                 </div>
-
-    
+            <div id="contact">
+                <p id="contact-p">Contact Page Author</p>
+                <div class="contact-item">
+                    <p>
+                        <a href="mailto:tmaldonadotrs@gmail.com" target="_blank">
+                        Email
+                        </a>
+                    </p>
+                </div>
+                <div class="contact-item">
+                    <a href="https://github.com/tmaldonado98" target="_blank">Github</a>
+                </div>
+                <div class="contact-item">
+                    <a href="https://www.upwork.com/freelancers/~01b825cb63b533bce9" 
+                        target="_blank">Upwork</a>
+                </div>
+            </div>    
         </nav>
+        
     </header>
 
     <main>
@@ -72,47 +89,163 @@
                     <div>
                         <h2>Innovation That Drives Us</h2>
                     </div>
-                    <div id="latest-prod-btn">
+                    <div onmouseleave="this.style.transition='100ms ease-in-out';"
+                    id="latest-prod-btn">
                         <a href="./pages/models/xsw.html">
                             <div id="padding-div">
                                 <p>Learn More</p>
                             </div>
-                        </a>
-                            
+                        </a>        
                     </div>    
+                </div>  
+            </div>
+        </section>
+
+        <section id="news-section">
+            <div id="carousel-background">
+                <div id="container-slides">
+                        <div class="slider-img" 
+                            onmouseleave="this.style.transition='300ms ease-in-out';">
+                            <a href="./pages/newsstory.html">
+                            <img src="./icons-images/news1.jpg" alt="Newsstory">
+                            <p class="carous-p">All New Model XSW Coming In 2023</p></a>
+                        </div>
+                        <div class="slider-img"
+                            onmouseleave="this.style.transition='300ms ease-in-out';">
+                            <a href="./pages/newsstory.html">
+                            <img src="./icons-images/news2.jpg" alt="Newsstory">
+                            <p class="carous-p">Board Of Directors Approves Project
+                                To Expand XCVB Charging Stations Across The U.S.
+                            </p></a>
+                        </div>
+                        <div class="slider-img"
+                            onmouseleave="this.style.transition='300ms ease-in-out';">
+                            <a href="./pages/newsstory.html">
+                            <img src="./icons-images/news3.jpg" alt="Newsstory">
+                            <p class="carous-p">Wall Street Prepares For
+                                XCVB's Highly Anticipated IPO In August 
+                            </p></a>
+                        </div>
+                   
                 </div>
                 
             </div>
+
         </section>
 
-        <section class="section">
-            <div id="container-slider">
-                <div class="swiper-slide">
-                    <a href=""><div class="slider-img"></div></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href=""><div class="slider-img"></div></a>
-                </div>
-                <div class="swiper-slide">
-                    <a href=""><div class="slider-img"></div></a>
+        <section id="grid-section">
+            <p id="grid-h">Our State Of The Art Electric Fleet</p>
+            <div id="column-container">
+                <div class="product-column">
+                    <div class="product-card">
+                        <a id="c1" href="">
+                            <p class="prod-h">XSW</p>
+                            <img src="./icons-images/news1.jpg" alt="XSW">
+                                <img onmouseleave="this.style.transition='300ms ease-in-out';"
+                                    class="img-hover" src="./icons-images/model-xsw2.jpg" alt="XSW">
+                            <p class="prod-p">All New Electric Sports Vehicle</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a id="c2" href="">
+                            <p class="prod-h">XRF</p>
+                            <img src="./icons-images/1.1.jpg" alt="XRF">
+                                <img onmouseleave="this.style.transition='300ms ease-in-out';"
+                                class="img-hover" src="./icons-images/1.2.jpg" alt="XRF">
+                            <p class="prod-p">Mid-Size Smart Vehicle</p>
+                        </a>
+                    </div>
                 </div>
 
+                <div class="product-column">
+                    <div class="product-card">
+                        <a id="c4" href="">
+                            <p class="prod-h">XPI</p>
+                            <img src="./icons-images/3.1.jpg" alt="XPI">
+                                <img onmouseleave="this.style.transition='300ms ease-in-out';"
+                                class="img-hover" src="./icons-images/3.2.jpg" alt="XRF">
+                            <p class="prod-p">Powerful, Fast Vehicle For The Highway</p>
+                        </a>
+                    </div>
+                    <div class="product-card">
+                        <a id="c5" href="">
+                            <p class="prod-h">XIT</p>
+                            <img src="./icons-images/4.1.jpg" alt="XIT">
+                                <img onmouseleave="this.style.transition='300ms ease-in-out';"
+                                class="img-hover" src="./icons-images/4.2.jpg" alt="XRF">
+                            <p class="prod-p">Elegant, Smart, City Dweller</p>
+                        </a>
+                    </div>
+                    
+                </div>
             </div>
-
-            <div id="news-bar">
-
-            </div>
-            <div id="news-subt"></div>
         </section>
 
+
+        <section id="services-section">
+            <div id="container-services">
+                <div class="services-card">
+                    <img src="./icons-images/home.jpg" alt="Smart Home With XCVB">
+                    <p class="card-p">
+                        Home products designed to craft your smart, energy-efficient home.
+                    </p>
+                        <div onmouseleave="this.style.transition='100ms ease-in-out';"
+                        class="btn-card">
+                            <a href="./pages/house.html">
+                            <p class="btn-p">Learn More</p>
+                            </a>
+                    </div>
+                    
+                </div>
+
+                <div class="services-card">
+                    <img src="./icons-images/power.jpg" alt="Power Your Life With XCVB">                    
+                    <p class="card-p">
+                        Power your home and vehicle with our smart energy service system.
+                    </p>
+                        <div onmouseleave="this.style.transition='100ms ease-in-out';" 
+                        class="btn-card">
+                            <a href="./pages/power.html">
+                            <p class="btn-p">Learn More</p>
+                            </a>
+                        </div>
+                    
+                </div>
+
+                <div class="services-card">
+                    <img src="./icons-images/services.jpg" alt="Our Additional Services">
+                    <p class="card-p">
+                        XCVB's additional services to maximize customer experience.
+                    </p>
+                        <div onmouseleave="this.style.transition='100ms ease-in-out';" 
+                        class="btn-card">
+                            <a href="./pages/service.html">
+                            <p class="btn-p">Learn More</p>
+                            </a>
+                        </div>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    <!--<footer>
-        <p>
-            XCVB © 2022 All Rights Reserved
-        </p>
-    </footer>-->
+    <footer>
+        <div id="footer-text">
+            <p id="brand">
+                XCVB © 2022 All Rights Reserved
+            </p>
+            <p id="legal">
+                Privacy & Legal
+            </p>
+        </div>
+        
+        <div id="social">
+            <img src="./icons-images/twitter icon.png" alt="Twitter">
+            <img src="./icons-images/facebook icon.png" alt="Facebook">
+            <img src="./icons-images/instagram icon.png" alt="IG">
+            <img src="./icons-images/linkedin icon.png" alt="LinkedIn">
+        </div>
+    </footer>
 
 
 </body>
