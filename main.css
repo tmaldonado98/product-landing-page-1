@@ -77,12 +77,13 @@ a:link, a:visited {
 }
 
 .contact-item {
-  opacity: 0;
+  display: none;
   height: 100%;
   padding: 1.25rem 1rem;
 }
 
 #contact:hover .contact-item {
+  display:initial;
   opacity: 1;
   transition: 100ms ease-in-out;
 }
@@ -101,6 +102,7 @@ a:link, a:visited {
   width: 100%;
   background-image: url(./icons-images/model-xsw.jpg);
   background-size: cover;
+  background-position: center;
 }
 
 #prod-title {
@@ -345,3 +347,62 @@ footer {
 #legal {
   cursor: pointer;
 }/*# sourceMappingURL=main.css.map */
+
+#menu {
+  display: none;
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  #container-nav {
+    justify-content: space-between;
+  }
+  
+  #container-logo {
+    margin: 0 5%;
+  }
+  
+  #logo {
+    width: 4rem;
+
+  }
+
+  .nav-item, #contact {
+    display: none;
+  }
+
+  #menu-icon {
+    position: relative;
+    margin-right: 5rem  ;
+  }
+
+  #menu-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  #menu {
+    display: block;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    background-color: white;
+  }
+  
+  #contact-mob {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  }
+  #contact-mob #contact-p-mob {
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .contact-item-mob {
+    display: none;
+    height: 100%;
+    padding: 1.25rem 1rem;
+  }
+
+}
