@@ -10,7 +10,7 @@
     </head>
 
 <body>
-    <!--<script defer src="./main.js"></script>-->
+    <script defer src="./main.js"></script>
     <header>
         <nav id="container-nav">
                 <div id="container-logo">
@@ -76,8 +76,9 @@
                 </div>
             </div>    
             
-            <i id="menu-icon"><img src="./icons-images/hamburger icon.png"></i>
-                <div id="menu">                
+            <i onclick="showMenu ()"
+                id="menu-icon"><img src="./icons-images/hamburger icon.png"></i>
+                <div id="menu"  class="menuOn   ">                
                     <div class="nav-item-mob">
                         <a href="./pages/models.html">
                             <div class="h-link-mob">
@@ -227,7 +228,7 @@
                             <p class="prod-p">Powerful, Fast Vehicle For The Highway</p>
                         </a>
                     </div>
-                    <div class="product-card">
+                    <div class="product-card" id="two">
                         <a id="c5" href="">
                             <p class="prod-h">XIT</p>
                             <img src="./icons-images/4.1.jpg" alt="XIT">
