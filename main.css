@@ -332,6 +332,7 @@ footer {
 #footer-text {
   display: flex;
   width: 50%;
+  margin-left: 3rem;
   gap: 6rem;
   align-items: center;
 }
