@@ -66,10 +66,15 @@ a:link, a:visited {
   display: flex;
   flex-direction: row;
   position: relative;
-  margin-left: 10rem;
+  margin-left: 4rem;
   gap: 2rem;
   align-items: center;
 }
+
+#contact-mob {
+  display: none;
+}
+
 #contact #contact-p {
   cursor: pointer;
   font-weight: bold;
@@ -326,9 +331,8 @@ footer {
 
 #footer-text {
   display: flex;
-  margin: 0 0 0 3rem;
   width: 50%;
-  gap: 10rem;
+  gap: 6rem;
   align-items: center;
 }
 
@@ -369,8 +373,23 @@ footer {
     display: block;    
 } 
 
+#contact-item-mob1, #contact-item-mob2, #contact-item-mob3 {
+  padding: 0.5rem;
+}
+
+
 @media screen and (min-width: 350px) and (max-width: 1300px) {
+  #contact-item-mob1, #contact-item-mob2, #contact-item-mob3 {
+    display: none;
+  }
+
+  .nav-item-mob, #contact-mob {
+    padding: 0.5rem;
+    background-color: rgb(238, 247, 255);
+    border: 2px groove antiquewhite;
+  }
   
+
   #container-nav {
     justify-content: space-between;
   }
@@ -388,9 +407,10 @@ footer {
     display: none;
   }
 
+
   #menu-icon {
     position: relative;
-    margin-right: 5rem  ;
+    margin-right: 5rem;
   }
 
   #menu-icon img {
@@ -400,7 +420,6 @@ footer {
   }
 
   #menu {
-    display: none;
     position: fixed;
     top: 10vh;
     right: 0;
@@ -423,10 +442,18 @@ footer {
     height: 100%;
     padding: 1.25rem 1rem;
   }
+
+
+  .img-hover, .img-hover:hover {
+    display: none;
+  }
+
+  .services-card {
+    width: 35%;
+  }
 }
 
 @media screen and (min-width: 350px) and (max-width: 1000px) {
-
 
 #prod-title {
   top: 29rem;
@@ -498,6 +525,10 @@ footer {
   flex-direction: column;
   justify-content: none;
   align-items: center;
+}
+
+.services-card {
+  width: 65%;
 }
 
 .services-card {
