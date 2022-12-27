@@ -14,14 +14,25 @@ html {
   font-family: "Joan-Regular", Georgia, Verdana;
 }
 
-a {
+.h-link{
+  cursor: pointer;
+  transition: 200ms;
+}
+
+.h-link:hover{
+  border-bottom: 3px double black ;
+}
+
+.h-link-mob {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  text-decoration: none;
+  /* text-decoration: none; */
+
+  cursor: pointer;
 }
 
 a:link, a:visited {
@@ -33,7 +44,7 @@ a:link, a:visited {
   width: 100%;
   height: 7rem;
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
   padding: 0.75rem;
   background-color: rgb(238, 247, 255);
@@ -69,6 +80,7 @@ a:link, a:visited {
   margin-left: 4rem;
   gap: 2rem;
   align-items: center;
+  transition: 300ms;
 }
 
 #contact-mob {
@@ -85,12 +97,14 @@ a:link, a:visited {
   display: none;
   height: 100%;
   padding: 1.25rem 1rem;
+  transition: 250ms;
+
 }
 
 #contact:hover .contact-item {
   display:initial;
   opacity: 1;
-  transition: 100ms ease-in-out;
+  transition: 250ms;
 }
 
 .contact-item:hover {
@@ -185,6 +199,7 @@ a:link, a:visited {
 .slider-img {
   height: auto;
   margin: 0 1rem;
+  cursor: pointer;
 }
 
 .slider-img:hover {
@@ -436,6 +451,7 @@ footer {
   #contact-mob #contact-p-mob {
     font-weight: bold;
     width: 100%;
+    cursor: pointer;
   }
   
   .contact-item-mob {
